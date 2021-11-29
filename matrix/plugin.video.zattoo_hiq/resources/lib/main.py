@@ -1258,11 +1258,11 @@ class zattooPiP(xbmcgui.WindowXMLDialog):
     self.PiP =  __addon__.getSetting('pip')
 
     if self.PiP == "0":
-      self.toggleImgBG =xbmcgui.ControlImage(1280, 574, 260, 148, __addon__.getAddonInfo('path') + '/resources/media/teletextBG.png', aspectRatio=1)
-      self.toggleImg =xbmcgui.ControlImage(1280, 576, 256, 144, '', aspectRatio=1)
+      self.toggleImgBG =xbmcgui.ControlImage(1280, 574, 260, 148, __addon__.getAddonInfo('path') + '/resources/media/teletextBG.png', aspectRatio=1, colorDiffuse="50000000")
+      self.toggleImg =xbmcgui.ControlImage(1280, 576, 256, 144, '', aspectRatio=1, colorDiffuse="90FFFFFF")
     else:
-      self.toggleImgBG =xbmcgui.ControlImage(1280, 500, 390, 222, __addon__.getAddonInfo('path') + '/resources/media/teletextBG.png', aspectRatio=1)
-      self.toggleImg =xbmcgui.ControlImage(1280, 502, 386, 218, '', aspectRatio=1)
+      self.toggleImgBG =xbmcgui.ControlImage(1280, 500, 390, 222, __addon__.getAddonInfo('path') + '/resources/media/teletextBG.png', aspectRatio=1, colorDiffuse="50000000")
+      self.toggleImg =xbmcgui.ControlImage(1280, 502, 386, 218, '', aspectRatio=1, colorDiffuse="90FFFFFF")
 
     self.addControl(self.toggleImgBG)
     self.addControl(self.toggleImg)
